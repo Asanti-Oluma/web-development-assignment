@@ -1,0 +1,152 @@
+
+/* HAMBURGER MENU — MINIMAL VERSION */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* hide checkbox */
+.nav-toggle {
+  display: none;
+}
+
+/* mobile styles */
+@media (max-width: 700px) {
+
+  .hamburger {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background: #111;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .main-nav a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  /* when checked → show menu */
+  .nav-toggle:checked ~ .main-nav {
+    display: flex;
+  }
+}
+/*COMMON STYLES*/
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:'Times New Roman', Times, serif;
+  color:rgba(255,255,255);
+  background-color: #161515;
+  line-height:1.6;
+}
+.site-header{
+  position:fixed;
+  top:0;left:0;right:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+  z-index:100;
+}
+.logo{
+  font-family:cursive;
+  letter-spacing:6px;
+  font-size:20px;
+  color:#f2c14e;
+}
+.main-nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:22px;
+  font-size:15px;
+  cursor: pointer;
+}
+.main-nav .order-btn{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.15);
+  padding:6px 10px;
+  border-radius:4px
+}
+.main-nav .social a{
+  margin-left:12px;
+  color:rgb(221,221,221);
+}
+/*Footer*/
+
+footer {
+  width: 100%;
+  background: #111; /* Clean dark background */
+  padding: 40px 20px; /* Height + spacing */
+  color: #ddd;
+}
+
+.footer_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer_tag {
+  text-align: center;
+}
+
+.footer_tag h2 {
+  color: #f2c14e; /* Gold highlight (restaurant style) */
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.footer_tag p,
+.footer_tag a {
+  color: #ccc;
+  font-size: 16px;
+  margin: 6px 0;
+  text-decoration: none;
+}
+
+.footer_tag i {
+  margin: 8px;
+  font-size: 20px;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer_tag i:hover {
+  color: #f2c14e; /* Gold hover */
+}
+.footer_tag a:hover {
+  color: #f2c14e; /* Gold hover */
+}
+
+footer .end {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  border-top: 1px solid #333;
+}
+
+footer .end span {
+  color: #f2c14e;
+  margin-left: 6px;
+}

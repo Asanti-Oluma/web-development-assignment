@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+
+  color: #fff;
+  padding-top: 90px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "contact-info contact-info contact-form contact-form contact-form contact-form"
+    "contact-info contact-info contact-form contact-form contact-form contact-form"
+    ". review-section review-section review-section review-section .";
+  gap: 30px;
+  column-gap: 75px;
+  padding: 40px;
+  color: #fff;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.contact-info {
+  grid-area: contact-info;
+  background: transparent;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.mail,
+.phone_number,
+.location {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.contact-info h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #fff;
+}
+.contact-info span {
+  color: #888;
+  font-weight: bold;
+  font-size: 18px;
+}
+.contact-info i {
+  font-size: 25px;
+  margin-right: 10px;
+  color: #b17911; /* icon color */
+}
+.social-info {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.social-info i {
+  background: #222;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-info i:hover {
+  background: #b17911;
+  color: #000;
+}
+
+.contact-info .location .address span {
+  color: #646262;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.contact-info .mail .emails span {
+  color: #646262;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-info .phone_number .phones span {
+  color: #646262;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.contact-form {
+  grid-area: contact-form;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 40px;
+  border-radius: 25px;
+  backdrop-filter: blur(8px); /* glass effect */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid #444;
+}
+.review-section {
+  grid-area: review-section;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 35px;
+  /* border: 1px solid #444; */
+}
+.contact-form h2,
+.review-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #e0b36f;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ccc;
+}
+.form-group input,
+.form-group textarea {
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #e0b36f;
+  box-shadow: 0 0 8px #e0b36f44;
+}
+.contact-btn,
+.review-btn {
+  width: 100%;
+  background: #8a6624;
+  color: #000;
+  font-style: bolder;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-btn:hover,
+.review-btn:hover {
+  background: #ffd88c;
+}
+/* RATING BOX */
+.rating-box {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rating-box label {
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* STAR CONTAINER */
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+/* HIDE THE RADIO BUTTONS */
+.stars input {
+  display: none;
+}
+
+/* STAR STYLE */
+.stars label {
+  font-size: 35px;
+  color: #555;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.stars label:hover,
+.stars label:hover ~ label {
+  color: #ffd700; /* gold */
+}
+
+/* WHEN SELECTED */
+.stars input:checked ~ label {
+  color: #ffd700; /* gold when selected */
+}
+.footer {
+  width: 100%;
+  padding: 0 0 0 20px;
+  background: #878585;
+  gap: 0;
+}
+footer {
+  width: 100%;
+  background: #111; /* Clean dark background */
+  padding: 40px 20px; /* Height + spacing */
+  color: #ddd;
+}
+
+.footer_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer_tag {
+  text-align: center;
+}
+
+.footer_tag h2 {
+  color: #f2c14e; /* Gold highlight (restaurant style) */
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.footer_tag p,
+.footer_tag a {
+  color: #ccc;
+  font-size: 16px;
+  margin: 6px 0;
+  text-decoration: none;
+}
+
+.footer_tag i {
+  margin: 8px;
+  font-size: 20px;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer_tag i:hover {
+  color: #f2c14e; /* Gold hover */
+}
+.footer_tag a:hover {
+  color: #f2c14e; /* Gold hover */
+}
+
+footer .end {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  border-top: 1px solid #333;
+}
+
+footer .end span {
+  color: #f2c14e;
+  margin-left: 6px;
+}
+/* Tablet ≤ 1024px */
+@media (max-width: 1024px)
+{
+  /* Contact grid */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "contact-info contact-form"
+      "review-section review-section";
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 30px;
+  }
+
+  /* Sections */
+  .contact-form,
+  .contact-info,
+  .review-section {
+    padding: 25px;
+  }
+
+  .contact-form h2,
+  .review-section h2 {
+    font-size: 28px;
+  }
+}
+
+/* Mobile ≤ 768px */
+@media (max-width: 768px) {
+  /* Contact grid */
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "contact-info"
+      "contact-form"
+      "review-section";
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .contact-form,
+  .contact-info,
+  .review-section {
+    padding: 20px;
+  }
+
+  .contact-form h2,
+  .review-section h2 {
+    font-size: 26px;
+  }
+}
+
+/* Small Mobile ≤ 480px */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  .contact-form h2,
+  .review-section h2,
+  .contact-info h2 {
+    font-size: 24px;
+  }
+  .form-group input,
+  .form-group textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+  .contact-btn,
+  .review-btn {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .social-info i {
+    padding: 8px;
+    font-size: 18px;
+  }
+}

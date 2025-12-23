@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menu_page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+     <link rel="stylesheet" href="../css/general.css"/>
+    <link rel="stylesheet" href="../css/menu.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">THE COZY SPOON</div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+   <label for="nav-toggle" class="hamburger">
+     <span></span>
+    <span></span>
+    <span></span>
+  </label>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html" class="order-btn">Order Online</a>
+        <span class="social">
+          <a href="#" aria-label="instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+        </span>
+      </nav>
+    </header>
+
+    <section class="menu-section">
+      <h2 class="menu-title">Our Menu</h2>
+
+      <div class="menu-filter">
+        <ul>
+          <li><a href="#">ALL</a></li>
+          <li><a href="International-dishes.html">International Dishes</a></li>
+          <li><a href="ethiopian-dishses.html">Ethiopian Dishes</a></li>
+          <li><a href="fasting.html">Fasting</a></li>
+          <li><a href="drinks.html">Drinks</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-container">
+        <div class="menu-card ethiopian">
+          <img src="../images/doro.jpg" alt="Doro Wot" />
+
+          <h3>Doro Wot</h3>
+          <p>Traditional chicken stew with egg</p>
+          <span class="price">120 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+
+        <div class="menu-card ethiopian">
+          <img src="../images/pastta_alferdo.jpg" alt="pasta Alferdo" />
+
+          <h3>Pasta Alferdo</h3>
+          <p>Creamy pasta with parmesan butter and garlic souce.</p>
+          <span class="price">120 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card ethiopian">
+          <img src="../images/cheese_burger.jpg" alt="cheese burger" />
+
+          <h3>Cheese Burger</h3>
+          <p>Juicy beef patty with cheese, lettuce, tomato, and sauce.</p>
+          <span class="price">120 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card drinks">
+          <img src="../images/juice.jpg" alt="Fresh Juice" />
+
+          <h3>Fresh Juice</h3>
+          <p>Assorted fresh fruit juices</p>
+          <span class="price">50 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+
+        <div class="menu-card fasting">
+          <img src="../images/fosolia.jpg" alt="Injera with Shiro" />
+
+          <h3>Fasolia</h3>
+          <p>Green beans and carrots sautéed with tomato sauce.</p>
+          <span class="price">100 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card fasting">
+          <img src="../images/timatim kurt.jpg" alt="Injera with Shiro" />
+
+          <h3>Tomato Salad</h3>
+          <p>Fresh tomato salad with onion and olive oil.</p>
+          <span class="price">100 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+
+        <div class="menu-card international">
+          <img src="../images/Margherita _Pizza .jpg" alt="margherita pizza" />
+
+          <h3>Margherita Pizza</h3>
+          <p>Classic pizza with tomato, mozzarella, and basil.</p>
+          <span class="price">115 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card drinks">
+          <img src="../images/buna.jpg" alt="Fresh Juice" />
+
+          <h3>Ethiopian Coffee</h3>
+          <p>Freshly brewed coffee with traditional flavor.</p>
+          <span class="price">50 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card ethiopian">
+          <img src="../images/ayb.jpg" alt="ayib" />
+
+          <h3>Ayib</h3>
+          <p>Soft traditional Ethiopian cheese, slightly tangy.</p>
+          <span class="price">120 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card ethiopian">
+          <img src="../images/kitfo.jpg" alt="kitfo" />
+
+          <h3>Kitfo</h3>
+          <p>
+            Minced raw beef marinated in spices, served slightly cooked or raw.
+          </p>
+          <span class="price">120 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+
+        <div class="menu-card international">
+          <img src="../images/Fried _Chicken.jpg" alt="fried chiken" />
+
+          <h3>Fried Chicken</h3>
+          <p>Crispy golden chicken served with spicy sauce.</p>
+          <span class="price">115 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+
+        <div class="menu-card drinks">
+          <img src="../images/Lemonade .jpg" alt="Fresh Juice" />
+
+          <h3>Lemonade</h3>
+          <p>Freshly squeezed lemons with sugar.</p>
+          <span class="price">50 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card fasting">
+          <img src="../images/azifa.jpg" alt="Injera with Shiro" />
+
+          <h3>Azifa</h3>
+          <p>Lentil salad with onion, mustard, and lemon.</p>
+          <span class="price">100 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card drinks">
+          <img src="../images/tropical_punch.jpg" alt="Fresh Juice" />
+
+          <h3>Tropical Punch</h3>
+          <p>Mixed fruit drink with tropical flavors.</p>
+          <span class="price">50 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card drinks">
+          <img src="../images/iced coffee.jpg" alt="Fresh Juice" />
+
+          <h3>Iced Coffee</h3>
+          <p>Ethiopian coffee served cold with ice.</p>
+          <span class="price">50 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card ethiopian">
+          <img src="../images/Tibs .jpg" alt="tibs" />
+
+          <h3>Tibs</h3>
+          <p>Sautéed beef or lamb cubes with onions, peppers, and herbs.</p>
+          <span class="price">120 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card drinks">
+          <img src="../images/Mojito.jpg" alt="Fresh Juice" />
+
+          <h3>Mojito</h3>
+          <p>Lime, mint, and soda water chilled.</p>
+          <span class="price">50 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+
+        <div class="menu-card ethiopian">
+          <img src="../images/gomen.jpg" alt="gomen" />
+
+          <h3>Gomen</h3>
+          <p>Collard greens sautéed with onions, garlic, and spices.</p>
+          <span class="price">120 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card drinks">
+          <img src="../images/tej.jpg" alt="Fresh Juice" />
+
+          <h3>Tej</h3>
+          <p>Traditional Ethiopian honey wine.</p>
+          <span class="price">50 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card drinks">
+          <img src="../images/Chocolate Milkshake.jpg " alt="Fresh Juice" />
+
+          <h3>Chocolate Milkshake</h3>
+          <p>Thick chocolate ice cream blended smooth.</p>
+          <span class="price">50 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card international">
+          <img src="../images/Fish and Chips.jpg" alt="fish and chips" />
+
+          <h3>Fish and Chips</h3>
+          <p>Battered fish fillet with golden fries.</p>
+          <span class="price">130 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card ethiopian">
+          <img src="../images/Enkulal Firfir.jpg" alt="enkulal frfr " />
+
+          <h3>Enkulal Firfir</h3>
+          <p>Scrambled eggs cooked with onions, tomatoes, and mild spices.</p>
+          <span class="price">120 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+        <div class="menu-card ethiopian">
+          <img src="../images/beyaynetu.jpg" alt="beyaynetu" />
+
+          <h3>Beyaynetu</h3>
+          <p>A mix of various fasting/vegetarian dishes served on injera.</p>
+          <span class="price">120 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+
+        <div class="menu-card international">
+          <img src="../images/grill .jpg" alt="grilled stick" />
+
+          <h3>Grilled Steak</h3>
+          <p>Seasoned steak grilled to perfection with herbs.</p>
+          <span class="price">130 ETB</span>
+          <button class="order-btn">
+            <a href="../css/order.css">Order Now</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_main">
+        <div class="footer_tag">
+          <h2>Location</h2>
+          <p>Addis Ababa,</p>
+          <p>Bole Atlas</p>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Quick Link</h2>
+          <a href="index.html"><p>Home</p></a>
+          <a href="about.html"><p>About</p></a>
+          <a href="menu.html"><p>Menu</p></a>
+          <a href="about.html"><p>Gallery</p></a>
+          <a href="order.html"><p>Order</p></a>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Contact</h2>
+          <p>+251 953055438</p>
+          <p>+251 956627609</p>
+          <p>toliana39@gmail.com</p>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Our Service</h2>
+          <p>Fast Delivery</p>
+          <p>Easy Payments</p>
+          <p>24 x 7 Service</p>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Follows</h2>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+
+      <p class="end">
+        <i class="fa-solid fa-copyright"></i>2025<span>The Cozy Spoon.</span>
+        All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
